@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Color Studio",
+  "version": "2.0",
+  "description": "Advanced color grading tools for YouTube",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ]
+}
